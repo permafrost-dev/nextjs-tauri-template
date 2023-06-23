@@ -8,15 +8,15 @@ and [`create tauri-app`](https://tauri.app/v1/guides/getting-started/setup).
 
 ## Template Features
 
-- TypeScript frontend using Next.js React framework
-- [TailwindCSS](https://tailwindcss.com/) as a utility-first atomic CSS framework
-  - The example page in this template app has been updated to use only TailwindCSS
-  - The `@tailwindcss/aspect-ratio`, `@tailwindcss/forms`, and `@tailwindcss/typography` TailwindCSS plugins are installed by default.
-- Opinionated formatting and linting already setup and enabled
-  - [ESLint](https://eslint.org/) + [Prettier](https://prettier.io/) for frontend,
-  - [clippy](https://github.com/rust-lang/rust-clippy) and
-  - [rustfmt](https://github.com/rust-lang/rustfmt) for Rust code
-- GitHub Actions to keep dependencies updated automatically
+-   TypeScript frontend using Next.js React framework
+-   [TailwindCSS](https://tailwindcss.com/) as a utility-first atomic CSS framework
+    -   The example page in this template app has been updated to use only TailwindCSS
+    -   The `@tailwindcss/aspect-ratio`, `@tailwindcss/forms`, and `@tailwindcss/typography` TailwindCSS plugins are installed by default.
+-   Opinionated formatting and linting already setup and enabled
+    -   [ESLint](https://eslint.org/) + [Prettier](https://prettier.io/) for frontend,
+    -   [clippy](https://github.com/rust-lang/rust-clippy) and
+    -   [rustfmt](https://github.com/rust-lang/rustfmt) for Rust code
+-   GitHub Actions to keep dependencies updated automatically
 
 ## Getting Started
 
@@ -193,9 +193,9 @@ from `import { invoke } from "@/lib/tauri"`.
 
 To learn more about Next.js, take a look at the following resources:
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+-   [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
+-   [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
 
 And to learn more about Tauri, take a look at the following resources:
 
-- [Tauri Documentation - Guides](https://tauri.app/v1/guides/) - learn about the Tauri toolkit.
+-   [Tauri Documentation - Guides](https://tauri.app/v1/guides/) - learn about the Tauri toolkit.

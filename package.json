@@ -26,8 +26,8 @@
         "*.{yaml,yml}": [
             "./node_modules/.bin/prettier --config prettier.config.js --tab-width 2 --write"
         ],
-        "*.{html,css,scss,svg}": [
-            "prettier --write"
+        "*.{html,css,scss,svg,md}": [
+            "./node_modules/.bin/prettier --config prettier.config.js --write"
         ]
     },
     "dependencies": {
@@ -38,7 +38,6 @@
         "react-dom": "^18.2.0"
     },
     "devDependencies": {
-        "@prettier/plugin-xml": "^2.2.0",
         "@tailwindcss/aspect-ratio": "^0.4.2",
         "@tailwindcss/forms": "^0.5.3",
         "@tailwindcss/typography": "^0.5.9",
