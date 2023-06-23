@@ -26,7 +26,7 @@
         "*.{yaml,yml}": [
             "./node_modules/.bin/prettier --config prettier.config.js --tab-width 2 --write"
         ],
-        "*.{html,css,scss,svg,md}": [
+        "*.{html,css,scss,svg}": [
             "prettier --write"
         ]
     },

@@ -1,4 +1,4 @@
-# Tauri + Next.js Template
+# Tauri, Next.js, Typescript & TailwindCSS Template
 
 ![Tauri window screenshot](public/tauri-nextjs-template_screenshot.png)
 
@@ -6,23 +6,17 @@ This is a [Tauri](https://tauri.app/) project template using [Next.js](https://n
 bootstrapped by combining [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app)
 and [`create tauri-app`](https://tauri.app/v1/guides/getting-started/setup).
 
-This template uses [`pnpm`](https://pnpm.io/) as the Node.js dependency
-manager.
-
 ## Template Features
 
--   TypeScript frontend using Next.js React framework
--   [TailwindCSS](https://tailwindcss.com/) as a utility-first atomic CSS framework
-    -   The example page in this template app has been updated to use only TailwindCSS
-    -   While not included by default, consider using
-        [Radix UI Primitives](https://www.radix-ui.com/) and/or
-        [HeadlessUI components](https://headlessui.com/) for completely unstyled and fully
-        accessible UI components, which integrate nicely with TailwindCSS
--   Opinionated formatting and linting already setup and enabled
-    -   [ESLint](https://eslint.org/) + [Prettier](https://prettier.io/) for frontend,
-        [clippy](https://github.com/rust-lang/rust-clippy) and
-        [rustfmt](https://github.com/rust-lang/rustfmt) for Rust code
--   GitHub Actions to check code formatting and linting for both TypeScript and Rust
+- TypeScript frontend using Next.js React framework
+- [TailwindCSS](https://tailwindcss.com/) as a utility-first atomic CSS framework
+  - The example page in this template app has been updated to use only TailwindCSS
+  - The `@tailwindcss/aspect-ratio`, `@tailwindcss/forms`, and `@tailwindcss/typography` TailwindCSS plugins are installed by default.
+- Opinionated formatting and linting already setup and enabled
+  - [ESLint](https://eslint.org/) + [Prettier](https://prettier.io/) for frontend,
+  - [clippy](https://github.com/rust-lang/rust-clippy) and
+  - [rustfmt](https://github.com/rust-lang/rustfmt) for Rust code
+- GitHub Actions to keep dependencies updated automatically
 
 ## Getting Started
 
@@ -31,13 +25,13 @@ manager.
 After cloning for the first time, set up git pre-commit hooks:
 
 ```shell
-pnpm prepare
+npm run prepare
 ```
 
 To develop and run the frontend in a Tauri window:
 
 ```shell
-pnpm dev
+npm run dev
 ```
 
 This will load the Next.js frontend directly in a Tauri webview window, in addition to
@@ -48,7 +42,7 @@ starting a development server on `localhost:3000`.
 To export the Next.js frontend via SSG and build the Tauri application for release:
 
 ```shell
-pnpm build
+npm run build
 ```
 
 Please remember to change the bundle identifier in
@@ -71,7 +65,7 @@ Tauri frontend, only SSG can be used since SSR requires an active Node.js server
 
 Using Next.js and SSG helps to provide a quick and performant single-page-application
 (SPA) frontend experience. More information regarding this can be found here:
-https://nextjs.org/docs/basic-features/pages#pre-rendering
+<https://nextjs.org/docs/basic-features/pages#pre-rendering>
 
 ### `next/image`
 
@@ -87,9 +81,9 @@ changes to its quality, size, or format.
 
 ### error[E0554]: `#![feature]` may not be used on the stable release channel
 
-If you are getting this issue when trying to run `pnpm tauri dev`, it may be that you
+If you are getting this issue when trying to run `npm run dev`, it may be that you
 have a newer version of a Rust dependency that uses an unstable feature.
-`pnpm tauri build` should still work for production builds, but to get the dev command
+`npm run build` should still work for production builds, but to get the dev command
 working, either downgrade the dependency or use Rust nightly via
 `rustup override set nightly`.
 
@@ -199,11 +193,9 @@ from `import { invoke } from "@/lib/tauri"`.
 
 To learn more about Next.js, take a look at the following resources:
 
--   [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and
-    API.
--   [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
+- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
 
 And to learn more about Tauri, take a look at the following resources:
 
--   [Tauri Documentation - Guides](https://tauri.app/v1/guides/) - learn about the Tauri
-    toolkit.
+- [Tauri Documentation - Guides](https://tauri.app/v1/guides/) - learn about the Tauri toolkit.
