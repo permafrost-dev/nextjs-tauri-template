@@ -1,0 +1,8 @@
+.next/*
+.yarn/*
+build/*
+coverage/*
+dist/*
+public/*
+node_modules/*
+package-lock.json
